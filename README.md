@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 FV Dashboard
 
-## Getting Started
+**FV Dashboard** is a modern admin dashboard built with **Next.js**, **TypeScript**, and **Tailwind CSS**. It features a clean, responsive interface with date pickers, icon sets, and styled components—perfect for building scalable admin panels or web applications.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+| Tool              | Description                          |
+|-------------------|--------------------------------------|
+| Next.js           | React framework with SSR & routing   |
+| React             | UI library for building interfaces   |
+| TypeScript        | Typed JavaScript for better dev experience |
+| Tailwind CSS      | Utility-first CSS framework          |
+| Lucide React      | Clean and customizable icon set      |
+| React DatePicker  | Date picker component                |
+| date-fns          | Date utility functions               |
+
+---
+
+
+## 🛠️ Getting Started
+
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Scripts
 
-## Learn More
+| Command          | Description                            |
+|------------------|----------------------------------------|
+| `npm run dev`    | Start development server               |
+| `npm run build`  | Build the project for production       |
+| `npm run start`  | Run the production server              |
+| `npm run lint`   | Run lint checks using ESLint           |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✅ Code Quality
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses **ESLint** to maintain clean and consistent code.
 
-## Deploy on Vercel
+### Run lint
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Fix automatically
+
+```bash
+npm run lint -- --fix
+```
+
+---
+
+## 🎨 Styling with Tailwind CSS
+
+Tailwind CSS is configured with PostCSS and is used throughout the project using utility classes.
+
+You can easily extend the theme or add plugins in `tailwind.config.js`.
+
+---
+
+## 📅 Date Handling
+
+- **React DatePicker** is used to select dates visually.
+- **date-fns** is used to handle date formatting and manipulation.
+
+---
+
+## 💠 Icons
+
+The project uses [Lucide React](https://lucide.dev) icons.
+
+Example usage:
+
+```tsx
+import { User } from 'lucide-react'
+
+<User size={24} />
+```
+
+---
+
+## 🌟 Features
+
+- ⚡ Built with the latest Next.js and React versions
+- 🎨 Beautiful UI with Tailwind CSS
+- 📅 Interactive date selection with React DatePicker
+- 📦 Icon system with Lucide
+- 🧠 Type-safe with TypeScript
+
+---
+
