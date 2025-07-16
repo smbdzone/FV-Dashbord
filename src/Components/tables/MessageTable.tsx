@@ -38,7 +38,7 @@ export default function MessageTable() {
 
 
     return (
-        <div className="overflow-x-auto mr-10  mb-5 mt-6 rounded-xl shadow-sm shadow-gray-400 ">
+        <div className="overflow-x-auto mx-2 md:mr-10  mb-5 mt-6 rounded-xl shadow-sm shadow-gray-400 ">
             <table className="w-full table-auto text-left p-4 ">
                 <thead className=" text-gray-600">
                     <tr>

@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/Components/Sidebar";
-import Topbar from "@/Components/Topbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -25,27 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div
-          className="grid grid-cols-5 grid-rows-5 h-screen"
-          style={{ gridColumnGap: '0px', gridRowGap: '0px' }}
-        >
-          <div className="col-span-5 row-span-1">
-            <div className="fixed top-0 left-0 right-0 h-12 z-30">
-              <Topbar />
-            </div>
-          </div>
-
-          <div className="row-start-2 row-end-6 col-start-1 col-end-2">
-            <div className="fixed top-24 left-0 h-[calc(100vh-4rem)] w-64 z-40">
-              <Sidebar />
-            </div>
-          </div>
-
-          <div className="row-start-2 row-end-6 col-start-2 col-end-6 mt-0 ml-4 px-16 overflow-y-auto">
-            {children}
-          </div>
-        </div>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
   );

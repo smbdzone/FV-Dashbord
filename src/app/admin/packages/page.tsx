@@ -1,4 +1,5 @@
-import BookingTable from '@/Components/BookingTable'
+
+import PackageTable from '@/Components/tables/PackageTable'
 import Link from 'next/link'
 import React from 'react'
 
@@ -10,7 +11,7 @@ const page = () => {
                 <Link href={'/admin/packages/new'} className='font-bold text-lg py-4'> + Add New Package</Link>
 
             </div>
-            <BookingTable />
+            <PackageTable />
         </>
     )
 }
