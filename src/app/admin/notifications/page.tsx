@@ -17,7 +17,7 @@ const data = [
         description: 'Book a package for dubai, miracle Garden'
     },
 ]
-const page = () => {
+const Page = () => {
     return (
         <>
             <div className='flex items-center justify-between'>
@@ -44,4 +44,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

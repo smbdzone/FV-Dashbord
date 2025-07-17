@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { PhoneCall, Key } from 'lucide-react'
 
-export default function page() {
+export default function Page() {
     const [isEditing, setIsEditing] = useState(false)
     const [info, setInfo] = useState({
         phone: '+971 58 458 0082',

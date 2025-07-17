@@ -3,17 +3,21 @@
 import { useState } from 'react'
 
 interface PackageFormProps {
-    initialData?: {
-        title: string
-        duration: string
-        price: string
-        country: string
-        description: string
-        text: string
-    }
-    onSubmit: (data: any) => void
+    initialData?: Omit<PackageData, 'image'>
+    onSubmit: (data: PackageData) => void
     submitLabel: string
+    text?: string
 }
+
+export interface PackageData {
+    title: string
+    duration: string
+    price: string
+    country: string
+    description: string
+    image: File | null
+}
+
 
 export default function PackageForm({
     initialData,

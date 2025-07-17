@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default function BlogForm() {
@@ -63,7 +64,7 @@ export default function BlogForm() {
         formatted = `<ul><li>${selectedText || 'List item'}</li></ul>`
         break
       case 'Link':
-        formatted = `<a href="https://example.com">${selectedText || 'link text'}</a>`
+        formatted = `<Link href="https://example.com">${selectedText || 'link text'}</Link>`
         break
       default:
         formatted = selectedText
@@ -104,7 +105,6 @@ export default function BlogForm() {
             className="w-full rounded-md bg-cyan-100 px-4 py-2"
           />
         </div>
-
         <div>
           <label className="block font-semibold mb-1">Category</label>
           <select

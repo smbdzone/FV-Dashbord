@@ -6,7 +6,7 @@ import React from 'react'
 
 
 type MenuItem = {
-    icon: JSX.Element
+    icon: React.JSX.Element
     title: string
     subtitle?: string
     link?: string
@@ -56,7 +56,7 @@ export default function SettingsMenu() {
 
             <div className="p-6  flex flex-col gap-6 text-gray-800 font-sans">
                 {menuItems.map((item, index) => (
-                    <Link href={item.link} key={index} className="flex items-start gap-4">
+                    <Link href={item.link!} key={index} className="flex items-start gap-4">
                         <div className="bg-[#C2F0EE] p-3 rounded-full">
                             {item.icon}
                         </div>

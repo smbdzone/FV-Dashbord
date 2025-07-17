@@ -1,5 +1,5 @@
 'use client'
-import PackageForm from '@/Components/forms/PackageForm'
+import PackageForm, { PackageData } from '@/Components/forms/PackageForm'
 
 // Simulate fetching existing data
 const dummyData = {
@@ -11,7 +11,7 @@ const dummyData = {
 }
 
 export default function EditPackagePage() {
-    const handleUpdate = (data: any) => {
+    const handleUpdate = (data: PackageData) => {
         console.log('Update package:', data)
 
     }

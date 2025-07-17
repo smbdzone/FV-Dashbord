@@ -1,11 +1,18 @@
 'use client'
-import PackageForm from '@/Components/forms/PackageForm'
+
+import PackageForm, { PackageData } from '@/Components/forms/PackageForm'
 
 export default function AddPackagePage() {
-    const handleAdd = (data: any) => {
+    const handleAdd = (data: PackageData) => {
         console.log('Add package:', data)
-        // TODO: Send to backend
+       //api call
     }
 
-    return <PackageForm onSubmit={handleAdd} submitLabel="Save Package" text="Add New Package" />
+    return (
+        <PackageForm
+            onSubmit={handleAdd}
+            submitLabel="Save Package"
+            text="Add New Package"
+        />
+    )
 }

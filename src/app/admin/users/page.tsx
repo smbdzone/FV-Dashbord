@@ -1,7 +1,7 @@
 import UserTable from '@/Components/tables/UserTable'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
     return (
         <>
             <h1 className='font-bold text-3xl py-4'>Users</h1>
@@ -10,4 +10,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

@@ -2,7 +2,7 @@ import BookingTable from '@/Components/BookingTable'
 import StatCard from '@/Components/StatCard'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
     return (
         <>
             <h1 className='font-bold text-3xl py-4'>Admin Dashboard</h1>
@@ -19,4 +19,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

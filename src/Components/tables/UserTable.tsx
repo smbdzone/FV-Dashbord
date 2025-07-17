@@ -48,7 +48,7 @@ export default function UserTable() {
                             <td className="p-3 py-5 text-[#4A739C]">{item.country}</td>
                             <td className="p-3 py-5 text-[#4A739C]">{item.status}</td>
                             <td className="p-3 py-5">
-                                <div className="flex gap-3">
+                                <div className="flex gap-1">
                                     <button onClick={() => handleEdit(item.id)} title="Edit">
                                         <img src="/icons/update.png" alt="" className='' />
                                     </button>

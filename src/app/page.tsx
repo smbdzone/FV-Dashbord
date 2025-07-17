@@ -12,7 +12,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-[100vh] w-full">
-   
+
       <div className="absolute inset-0 z-0">
         <img
           src="/images/header-image.png"
@@ -25,7 +25,7 @@ export default function HeroSection() {
       <div className="relative z-20 h-full flex flex-col">
         {/* Navbar */}
         <nav className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 px-6 md:px-10 py-4 text-white">
-       
+
           <img src="/images/logo-2.png" className="w-16 h-16" alt="logo" />
 
 
@@ -39,7 +39,7 @@ export default function HeroSection() {
             </li>
           </ul>
 
-          <div className="flex gap-4 items-center">
+          <div className="hidden md:flex gap-4 items-center">
             <ShoppingCart className="w-6 text-white" />
             <User className="w-6 text-white" />
           </div>
@@ -51,7 +51,7 @@ export default function HeroSection() {
 
           {/* Search Bar */}
           <div className="bg-white text-black flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 md:gap-3 px-6 py-4 rounded-3xl shadow-lg w-full max-w-5xl">
-        
+
             <div className="flex items-center gap-2 px-2 md:px-4 w-full md:w-auto">
               <div className="text-cyan-500 font-bold">●</div>
               <div>
@@ -65,7 +65,7 @@ export default function HeroSection() {
               <ChevronDown className="text-gray-400 w-4 h-4 ml-2 hidden md:block" />
             </div>
 
-        
+
             <div className="flex items-center gap-2 px-2 md:px-4 relative w-full md:w-auto">
               <CalendarDays className="text-indigo-500" />
               <div>
@@ -91,7 +91,7 @@ export default function HeroSection() {
               )}
             </div>
 
-       
+
             <div className="flex items-center gap-2 px-2 md:px-4 w-full md:w-auto">
               <div>
                 <p className="text-sm text-gray-500">Passengers</p>

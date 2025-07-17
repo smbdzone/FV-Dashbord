@@ -1,7 +1,7 @@
 import MessageTable from '@/Components/tables/MessageTable'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
     return (
         <div>
             <div>
@@ -13,4 +13,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
