@@ -52,7 +52,7 @@ export default function Sidebar() {
             <aside
                 className={`
           fixed md:static top-0 left-0 z-50
-           w-80 md:w-96 h-full md:h-[650px] 
+           w-80 md:w-86 h-full md:h-[650px] 
           p-6 flex flex-col justify-between transition-transform duration-300
           ${isOpen ? 'translate-x-0 bg-white' : '-translate-x-full'} md:translate-x-0
         `}

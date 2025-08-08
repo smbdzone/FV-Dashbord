@@ -1,6 +1,7 @@
 'use client'
 
 import { bookings } from '@/data/booking'
+import Link from 'next/link'
 export default function PackageTable() {
 
     const handleEdit = (id: string) => {
@@ -36,9 +37,11 @@ export default function PackageTable() {
                             <td className="p-3 py-5 text-[#4A739C]">{item.price}</td>
                             <td className="p-3 py-5">
                                 <div className="flex gap-3">
-                                    <button onClick={() => handleEdit(item.id)} title="Edit">
-                                        <img src="/icons/edit.png" alt="" />
-                                    </button>
+                                    <Link href={'/admin/packages/1/edit'}>
+                                        <button onClick={() => handleEdit(item.id)} title="Edit">
+                                            <img src="/icons/edit.png" alt="" />
+                                        </button>
+                                    </Link>
                                     <button onClick={() => handleDelete(item.id)} title="Delete">
                                         <img src="/icons/delete.png" alt="" />
                                     </button>
